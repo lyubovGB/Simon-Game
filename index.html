@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Simon the game</title>
+    <link rel='stylesheet' type='text/css' href='sass/main.css'>
+</head>
+<body>
+    
+    <div id="app" > 
+        <div class="green"
+        :class="{greenHow: !greenActive}"
+        @click = "greenTab"
+        v-bind:value="blockDisibled"
+        ></div>
+        <div class="red"
+        :class="{redHow: !redActive}"
+        @click = "redTab"
+        v-bind:value="blockDisibled"
+        ></div>
+        <div class="yellow"
+        :class="{yellowHow: !yellowActive}"
+        @click = "yellowTab"
+        v-bind:value="blockDisibled"
+        >
+        </div>
+        <div class="blue"
+        :class="{blueHow: !blueActive}"
+        @click = "blueTab"
+        v-bind:value="blockDisibled"
+        >
+        </div>
+        <div class="roud"
+        :class="{roudHow: !roudActive}"
+        
+        @click="startRound"
+        v-bind:value="level"><br><p>START!<br>Уровень: {{level-1}}<br> Скорость: {{ (lightTime/1000) - (lightDelay/1000)}}  Сек</p> </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src='app.js'></script>
+</body>
+</html>
