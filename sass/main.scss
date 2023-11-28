@@ -1,0 +1,86 @@
+#app{
+    margin: auto;
+    background-color: rgba(38, 39, 39);
+    width: 600px;
+    height: 600px;
+   border:  10px solid rgba(99, 95, 95, 0.546);
+   box-shadow: rgba(99, 95, 95, 0.546) 10px 0 5px 5px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 30px;
+    left: 20%;
+    div{
+        width: 40%;
+        height: 40%;
+        border-radius: 80%;
+       border:  10px solid rgba(44, 44, 42, 0.779);
+        margin: 0 0 0px 20px;
+        box-shadow: inset rgba(40, 38, 38, 0.688) 5px 5px 50px 5px;
+            
+    }
+        .green{
+            border-radius: 1500px 40px 50px 100px;
+            background-color: green;
+        }
+        .red{
+            border-radius: 40px 1500px 40px  0px ;
+            background-color: red;
+        }
+        .yellow{
+            border-radius:  40px 40px  40px 1500px;
+            background-color: yellow;
+        }
+
+        .blue{
+            border-radius:  40px 0px 1500px 40px;
+            background-color: blue;
+        }
+        .roud{
+            background-color: rgb(38, 39, 39);
+            width: 50%;
+            height: 40%;
+            border-radius: 100%;
+            border:  10px solid rgba(58, 58, 54, 0.049);
+            box-shadow: inset rgba(14, 14, 14, 0.688) 5px 5px 50px 5px;
+            position: absolute;
+            left: 140px;
+            color: wheat;
+            font-size: 30px;
+            padding-top: 30px;
+        }
+    .redHow{
+        
+        border:  10px solid red;
+        box-shadow:  red 5px 5px 50px 5px;
+    }
+    .greenHow{
+        
+        border:  10px solid green;
+        box-shadow:  green 5px 5px 50px 5px;
+    }
+    .greenNone{
+        background-color: rgba(250, 235, 215, 0.492);
+        border:  10px solid green;
+        box-shadow:  green 5px 5px 50px 5px;
+    }
+    .yellowHow{
+       
+        border:  10px solid yellow;
+        box-shadow:  yellow 5px 5px 50px 5px;
+    }
+    .blueHow{
+        //background-color: blue;
+        border:  10px solid blue;
+        box-shadow:  blue 5px 5px 50px 5px;
+    }
+    .roudHow{
+       
+        border:  none;
+        box-shadow: inset rgb(19, 18, 18) 5px 5px 50px 50px;
+    }
+}
